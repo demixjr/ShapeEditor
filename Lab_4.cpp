@@ -302,7 +302,10 @@ void Toolbar::OnCreate(HWND hWnd) {
     tbb[4].fsStyle = TBSTYLE_BUTTON;
     tbb[4].idCommand = ID_TOOL_LINE_OO;
 
-    
+    tbb[5].iBitmap = 5;
+    tbb[5].fsState = TBSTATE_ENABLED;
+    tbb[5].fsStyle = TBSTYLE_BUTTON;
+    tbb[5].idCommand = ID_TOOL_CUBE;
 
     hwndToolBar = CreateToolbarEx(hWnd,
         WS_CHILD | WS_VISIBLE | WS_BORDER | TTS_ALWAYSTIP |
